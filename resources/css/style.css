@@ -60,8 +60,8 @@ section {
 /*------------------------------------ */
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.699)), to(#000000)), url(img/hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.699), #000000), url(img/hero.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.699)), to(#000000)), url(img/-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.699), #000000), url(img/hero-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -161,6 +161,20 @@ h2:after {
     border-bottom: 2px solid #e67e22;
 }
 
+/* mobile-Nav */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* Sticky-Nav */
 
 .sticky {
@@ -169,10 +183,12 @@ h2:after {
     left: 0;
     width: 100%;
     background-color: rgb(255, 255, 255, 0.98);
+    -webkit-box-shadow: 0 2px 2px #efefef;
     box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
 }
 
-.main-nav {
+.sticky .main-nav {
     margin-top: 18px;
 }
 
@@ -189,6 +205,7 @@ h2:after {
 .sticky .logo-black {
     display: block;
 }
+
 /*------------------------------------ */
 
 /* Features */
@@ -444,8 +461,8 @@ input[type_submit] {
 /*------------------------------------ */
 
 .section-testimonials {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(/resources/css/img/back-customers.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/resources/css/img/back-customers.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(/resources/css/img/back-customers-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/resources/css/img/back-customers-min.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
@@ -651,4 +668,29 @@ footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+/*------------------------------------ */
+
+/* Animations */
+
+/*------------------------------------ */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }
